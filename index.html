@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--La etiqueta meta con name viewport es importante para el responsive device ya que "content" ajusta el contenido de mi pagina
+    al ancho del dispositivo del cual se mire-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--La etiqueta meta "description" no debe tener mas de 165 char-->
+    <meta
+      name="description"
+      content="Esta es la descripcion que aparecera en los motores de busqueda y que
+    posiciona a mi pag respecto a las otras"
+    />
+    <!--La etiqueta title no debe tener mas de 55 y 65 caracteres-->
+    <title>Document</title>
+    <link rel="stylesheet" href="/css y java/hoja_estilo.css" />
+  </head>
+  <body>
+    <p>hola mundo bb</p>
+    <hr />
+    <h2>etiquetas de texto basicas</h2>
+    <p>
+      palabras en:<br />
+      <b>negrita</b>, <u>subrayado</u>, <i>cursiva/italica</i>,
+      <mark>texto marcado</mark>, H<sub>2</sub>O, E = mc<sup>2</sup>
+    </p>
+    <hr />
+    <h2>etiquetas de texto semanticas</h2>
+    <strong>este texto es importante</strong> <br />
+    <em
+      >enfasis en este texto que tambien puede ser usado con &lt;i&gt; de
+      italica o cursiva</em
+    >
+    <blockquote>mas vale tarde que nunca</blockquote>
+    <cite>pedrito bm</cite>
+    <hr />
+    <h2>etiquetas de saltos</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Deleniti
+      facilis similique nesciunt sequi exercitationem, eaque amet necessitatibus
+      aspernatur. <br />Vero id dolor ipsa sit sequi fugiat unde quo esse
+      mollitia hic.
+    </p>
+    <hr />
+    <h2>etiquetas de formateo</h2>
+    <p>
+      <!--El sgte texto esta con un pre-formato      
+      <pre>
+        Tareas por hacer:
+        -HTML
+          -Aprender sus etiquetas
+          -Aprender como crear tablas
+        -CSS
+          -Aprender las propiedades que cada etiqueta puede tener
+          -Aprender los colores rgb
+      </pre>-->
+    </p>
+    <p>
+      <!--El sgte texto esta en formato codigo      
+      <pre>
+        <b>Python</b>
+        <code>
+          print("Hello world")
+          def funtion_suma(a,b):
+            return a + b
+          funtion_suma(1,2)
+        </code>
+      </pre>-->
+    </p>
+    <hr />
+    <h2>Etiquetas semanticas estructurales</h2>
+    <div>div-es una etiqueta contenedora que no tiene semantica</div>
+    <header>header-cabezera del documneto o de una parte de el</header>
+    <main>
+      main-define la seccion principal del documento, solo puede existir uno por
+      documento html
+    </main>
+    <footer>footer-pie de pagina del documneto o de una parte de el</footer>
+    <article>
+      article-es una seccion del documento auto-definida que se puede explicar
+      por si misma, dentro de ella podemos tener secciones de documento como
+      cabezera, footer sections y mas
+    </article>
+    <section>
+      section-define una seccion dentro de una pag web. Una seccion generica del
+      contenido
+    </section>
+    <nav>
+      nav-es como una barra de navegacion que te puede guiar a otras secciones
+      de la pag
+    </nav>
+    <aside>
+      aside-seccion que complementa al contenido principal como por ejemplo
+      publicidad al costado de tu pagina
+    </aside>
+    <address>
+      address-representa una direccion o informacion de contacto
+    </address>
+    <h2>Etiquetas de Bloque VS Etiquetas de Linea</h2>
+    <div style="background-color: blue">
+      la etiqueta de bloque por excelencia es la div, una etiqueta de bloque
+      genera saltos de lineas entre sus etiquetas hermanas arriba y abajo y
+      ocupan todo el ancho del dispositivo
+    </div>
+    <span style="background-color: coral"
+      >la etiqueta de linea por excelencia es la span, una etiqueta de linea
+      solo ocupa el espacio necesario que requiere su contenido y no todo el
+      ancho del dispositivo</span
+    >
+    <hr />
+    <h2>Imagenes</h2>
+    <!--Colocando una imagen dentro de un div para de esta manera lograr modificar su tamaño sin que afecte la calidad de imagen-->
+    <div style="width: 200px; height: 200px">
+      <img src="/img/imagen4.svg.png" alt="Logotipo de twitter" />
+    </div>
+    <img src="/img/imagen1.jpg" alt="imagen astronauta haciendo un dav 2024" />
+    <br />
+    <img src="/img/imagen2.png" alt="bart" />
+    <br />
+    <img src="/img/imagen3.gif" alt="homero" />
+    <span
+      >hola soy un texto y la etiqueta &lt;img&gt; es una de sustitucion no es
+      ni de bloque ni de linea y su comportamiento varia dependiendo de la
+      imagen</span
+    >
+    <hr />
+    <h2>Imagenes en formato svg</h2>
+    <img
+      src="/img/youtube.svg"
+      alt="icono de youtube"
+      width="300px"
+      height="300px"
+    />
+    <br />
+    <img
+      src="/img/cow-2-svgrepo-com.svg"
+      alt="vaca"
+      width="200px"
+      height="200px"
+    />
+    <hr />
+    <h2>Imagenes dentro de figure</h2>
+    <figure>
+      <img src="/img/imagen1.jpg" alt="astronauta haciendo un dav" />
+      <figcaption>astronauta haciendo un dav</figcaption>
+    </figure>
+    <hr />
+    <h2>Listas ordenadas</h2>
+    <h3>Estaciones del año</h3>
+    <ol>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol start="4">
+      <!--Con el atributo star podemos indicar en que numero queremos que comienze la lista-->
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol reversed>
+      <!--Este atributo al escribirlo para la lista, su mera presencia hace que la lista se invierta-->
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol type="I">
+      <!--Con el atributo type podemos indicar que tipo de indice queremos para la lista como num romanos, letras,etc-->
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <hr />
+    <h2>Listas desordenadas</h2>
+    <h3>tareas del hogar</h3>
+    <ul>
+      <li>lavar la ropa</li>
+      <li>hacer la tarea</li>
+      <li>cocinar</li>
+    </ul>
+    <ul type="circle">
+      <li>lavar la ropa</li>
+      <li>hacer la tarea</li>
+      <li>cocinar</li>
+    </ul>
+    <ul type="square">
+      <li>lavar la ropa</li>
+      <li>hacer la tarea</li>
+      <li>cocinar</li>
+    </ul>
+    <hr />
+    <h2>Tablas</h2>
+    <h3>Tabla simple</h3>
+    <table>
+      <tr>
+        <td>Num Carnet</td>
+        <td>Nombre</td>
+        <td>Ap. Paterno</td>
+        <td>Ap. Materno</td>
+      </tr>
+      <tr>
+        <td>95578533</td>
+        <td>Mathias</td>
+        <td>Humana</td>
+        <td>Ortiz</td>
+      </tr>
+      <tr>
+        <td>95578546</td>
+        <td>Marina</td>
+        <td>Ortiz</td>
+        <td>Martinez</td>
+      </tr>
+      <tr>
+        <td>12345678</td>
+        <td>Emerson</td>
+        <td>Figueroa</td>
+        <td>Morales</td>
+      </tr>
+    </table>
+    <h3>Tabla compleja</h3>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4">Tabla de Censo 2024</th>
+        </tr>
+        <tr>
+          <th>Num Carnet</th>
+          <th>Nombre</th>
+          <th>Ap. Paterno</th>
+          <th>Ap. Materno</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>95578533</td>
+          <td>Mathias</td>
+          <td rowspan="2">Humana</td>
+          <td rowspan="2">Ortiz</td>
+        </tr>
+        <tr>
+          <td>95578534</td>
+          <td>Alejandro</td>
+        </tr>
+        <tr>
+          <td>95578546</td>
+          <td>Marina</td>
+          <td>Ortiz</td>
+          <td>Martinez</td>
+        </tr>
+        <tr>
+          <td>12345678</td>
+          <td>Emerson</td>
+          <td>Figueroa</td>
+          <td>Morales</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4"><small>Censo 2024 Santa Cruz/Bolivia</small></td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <h2>....</h2>
+
+    <h2>Scripts en html</h2>
+    <p>
+      Los scripts siempre deben ir al final del body, al igual que la etiqueta
+      style debe ir en el head
+    </p>
+    <script src="/css y java/codigo.js"></script>
+    <script>
+      console.log("Escribiendo dentro de mi documento html usando un script");
+    </script>
+  </body>
+</html>

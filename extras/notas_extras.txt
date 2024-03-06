@@ -1,0 +1,11 @@
+-------------------------IMAGENES VECTORIALES EN FORMATO svg
+Paginas recomendadas para crear, descargar un archivo svg (vector) que usualmente se usan como logotipos ya que al modificarlo
+no suelen perden calidad:
+Pago Ilustraitor https://www.adobe.com/la/products/illustrator/free-trial-download.html
+gratis css icons https://css.gg/
+gratis svgrepo https://www.svgrepo.com/
+-------------------------DISEÑO WEB CON CSS GRID Y FLEXBOX
+Mirar los cursos de jonmircha sobre css grid y flexbox
+--------------------------
+
+
