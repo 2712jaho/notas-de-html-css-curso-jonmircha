@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -5,4 +8,9 @@ img {
 h2 {
   color: red;
   font-family: sans-serif;
+}
+
+video {
+  width: 58%;
+  height: 400px;
 }

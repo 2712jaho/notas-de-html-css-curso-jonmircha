@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta es la descripcion de esta pagina de mi sitio web en donde vemos el contenido de formularios"
+    />
+    <title>formularios</title>
+  </head>
+  <body>
+    <a href="/index.html">Volver a pag principal</a>
+    <h1>Formulario para postulacion a beca IDH</h1>
+    <details open>
+      <summary>Datos personales</summary>
+      <table>
+        <tr>
+          <td>Nombre</td>
+          <td>Apellido Paterno</td>
+          <td>Apellido Materno</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="nombre" placeholder="jose alejandro" />
+          </td>
+          <td>
+            <input type="text" name="ap-paterno" placeholder="Humana" />
+          </td>
+          <td>
+            <input type="text" name="ap-materno" placeholder="Ortiz" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Fecha de nacimiento</td>
+          <td>Edad</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="date" />
+          </td>
+          <td>
+            <input type="number" placeholder="age.." />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Estado Civil</td>
+          <td>Sexo</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="">
+              <input type="radio" name="estado-civil" />
+              Casado/a
+            </label>
+            <label for="">
+              <input type="radio" name="estado-civil" />
+              Soltero/a
+            </label>
+          </td>
+          <td>
+            <label for="">
+              <input type="radio" name="sexo" />
+              M
+            </label>
+            <label for="">
+              <input type="radio" name="sexo" />
+              F
+            </label>
+          </td>
+        </tr>
+      </table>
+    </details>
+    <details open>
+      <summary>Datos de Contacto</summary>
+      <table>
+        <tr>
+          <td>Telefono</td>
+          <td>Correo electronico</td>
+        </tr>
+        <tr>
+          <td><input type="tel" placeholder="+591 64309455" /></td>
+          <td><input type="email" placeholder="pepito@gmail.com" /></td>
+        </tr>
+        <tr>
+          <td>Formulario para Beca IDH</td>
+        </tr>
+        <tr>
+          <td><input type="" /></td>
+        </tr>
+      </table>
+    </details>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <!--La etiqueta meta con name viewport es importante para el responsive device ya que "content" ajusta el contenido de mi pagina
@@ -14,18 +14,84 @@
     <!--La etiqueta title no debe tener mas de 55 y 65 caracteres-->
     <title>Document</title>
     <link rel="stylesheet" href="/css y java/hoja_estilo.css" />
+    <!--La etiqueta link con el valor canonical del atributo rel, indica a los motores de busqueda
+    que la url que le pasemos al "href" va a ser la url principal de nuestra pagina-->
+    <link rel="canonical" href="https://tudominio.com/la-url-canonica" />
+    <!--el atributo "href" que tiene al atributo rel con el valor "icon" solo acepta imagenes PNG-->
+    <link rel="icon" href="/img/pikachu.png" />
+    <link rel="apple-touch-icon" href="/img/pikachu.png" />
+    <!--La etiqueta meta con el atributo name = "theme-color" modifica el color de la barra de navegacion
+    de mi sitio web en los telefonos moviles y con content le asignamos el color solo en formato exadecimal-->
+    <meta name="theme-color" content="ff6600" />
   </head>
   <body>
-    <p>hola mundo bb</p>
+    <p>Aprendiendo HTML</p>
+    <h2 id="temario" style="color: black">Temario del Curso</h2>
+    <ul>
+      <li>
+        <a href="/index.html#etiquetas-basicas">etiquetas de texto basicas</a>
+      </li>
+      <li>
+        <a href="/index.html#etiquetas-semanticas"
+          >etiquetas de texto semanticas</a
+        >
+      </li>
+      <li><a href="/index.html#etiquetas-saltos">etiquetas de saltos</a></li>
+      <li>
+        <a href="/index.html#etiquetas-formateo">etiquetas de formateo</a>
+      </li>
+      <li>
+        <a href="/index.html#etiqueta-estructural">
+          Etiquetas semanticas estructurales
+        </a>
+      </li>
+      <li>
+        <a href="/index.html#etiquetas-bloque-vs-linea"
+          >Etiquetas de Bloque VS Etiquetas de Linea</a
+        >
+      </li>
+      <li><a href="/index.html#imagenes">Imagenes</a></li>
+      <li><a href="/index.html#imagenes-svg">Imagenes en formato svg</a></li>
+      <li><a href="/index.html#figure">Imagenes dentro de figure</a></li>
+      <li><a href="/index.html#listas-ordenadas">Listas ordenadas</a></li>
+      <li><a href="/index.html#listas-desordenadas">Listas desordenadas</a></li>
+      <li><a href="/index.html#tablas">Tablas</a></li>
+      <li><a href="/index.html#enlaces">Enlaces</a></li>
+      <li>
+        <a href="/index.html#elementos-interactivos">Elementos interactivos</a>
+      </li>
+      <li><a href="/index.html#audio-video">Audio y video</a></li>
+      <li><a href="/index.html#iframe">Iframe</a></li>
+      <li>
+        <a href="/index.html#elementos-formulario">Elementos de formulario</a>
+      </li>
+      <li>
+        <a href="/index.html#metaetiquetas-seo"
+          >Metaetiquetas para SEO y moviles</a
+        >
+      </li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href="/index.html#scripts">Scripts en html</a></li>
+    </ul>
     <hr />
-    <h2>etiquetas de texto basicas</h2>
+    <h2 id="etiquetas-basicas">etiquetas de texto basicas</h2>
     <p>
       palabras en:<br />
       <b>negrita</b>, <u>subrayado</u>, <i>cursiva/italica</i>,
       <mark>texto marcado</mark>, H<sub>2</sub>O, E = mc<sup>2</sup>
     </p>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>etiquetas de texto semanticas</h2>
+    <h2 id="etiquetas-semanticas">etiquetas de texto semanticas</h2>
     <strong>este texto es importante</strong> <br />
     <em
       >enfasis en este texto que tambien puede ser usado con &lt;i&gt; de
@@ -33,16 +99,33 @@
     >
     <blockquote>mas vale tarde que nunca</blockquote>
     <cite>pedrito bm</cite>
+    <br /><br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>etiquetas de saltos</h2>
+    <h2 id="etiquetas-saltos">etiquetas de saltos</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Deleniti
       facilis similique nesciunt sequi exercitationem, eaque amet necessitatibus
       aspernatur. <br />Vero id dolor ipsa sit sequi fugiat unde quo esse
       mollitia hic.
     </p>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>etiquetas de formateo</h2>
+    <h2 id="etiquetas-formateo">etiquetas de formateo</h2>
     <p>
       <!--El sgte texto esta con un pre-formato      
       <pre>
@@ -67,8 +150,16 @@
         </code>
       </pre>-->
     </p>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>Etiquetas semanticas estructurales</h2>
+    <h2 id="etiqueta-estructural">Etiquetas semanticas estructurales</h2>
     <div>div-es una etiqueta contenedora que no tiene semantica</div>
     <header>header-cabezera del documneto o de una parte de el</header>
     <main>
@@ -96,7 +187,18 @@
     <address>
       address-representa una direccion o informacion de contacto
     </address>
-    <h2>Etiquetas de Bloque VS Etiquetas de Linea</h2>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
+    <h2 id="etiquetas-bloque-vs-linea">
+      Etiquetas de Bloque VS Etiquetas de Linea
+    </h2>
     <div style="background-color: blue">
       la etiqueta de bloque por excelencia es la div, una etiqueta de bloque
       genera saltos de lineas entre sus etiquetas hermanas arriba y abajo y
@@ -107,8 +209,17 @@
       solo ocupa el espacio necesario que requiere su contenido y no todo el
       ancho del dispositivo</span
     >
+    <br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>Imagenes</h2>
+    <h2 id="imagenes">Imagenes</h2>
     <!--Colocando una imagen dentro de un div para de esta manera lograr modificar su tamaño sin que afecte la calidad de imagen-->
     <div style="width: 200px; height: 200px">
       <img src="/img/imagen4.svg.png" alt="Logotipo de twitter" />
@@ -123,8 +234,17 @@
       ni de bloque ni de linea y su comportamiento varia dependiendo de la
       imagen</span
     >
+    <br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>Imagenes en formato svg</h2>
+    <h2 id="imagenes-svg">Imagenes en formato svg</h2>
     <img
       src="/img/youtube.svg"
       alt="icono de youtube"
@@ -138,14 +258,31 @@
       width="200px"
       height="200px"
     />
+    <br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>Imagenes dentro de figure</h2>
+    <h2 id="figure">Imagenes dentro de figure</h2>
     <figure>
       <img src="/img/imagen1.jpg" alt="astronauta haciendo un dav" />
       <figcaption>astronauta haciendo un dav</figcaption>
     </figure>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>Listas ordenadas</h2>
+    <h2 id="listas-ordenadas">Listas ordenadas</h2>
     <h3>Estaciones del año</h3>
     <ol>
       <li>Primavera</li>
@@ -174,8 +311,16 @@
       <li>Otoño</li>
       <li>Invierno</li>
     </ol>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>Listas desordenadas</h2>
+    <h2 id="listas-desordenadas">Listas desordenadas</h2>
     <h3>tareas del hogar</h3>
     <ul>
       <li>lavar la ropa</li>
@@ -192,8 +337,16 @@
       <li>hacer la tarea</li>
       <li>cocinar</li>
     </ul>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>Tablas</h2>
+    <h2 id="tablas">Tablas</h2>
     <h3>Tabla simple</h3>
     <table>
       <tr>
@@ -264,10 +417,438 @@
         </tr>
       </tfoot>
     </table>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
     <hr />
-    <h2>....</h2>
+    <h2 id="enlaces">Enlaces</h2>
+    <a href="/secciones de mi pag/hola.html">Ir a la seccion hola mundo</a>
+    <br />
+    <a href="/secciones de mi pag/adios.html">Ir a la seccion adios mundo</a>
+    <br />
+    <a href="/secciones de mi pag/formulario.html"
+      >Ir a la seccion de formularios</a
+    >
+    <br />
+    <span>Aprende HTML y CSS:</span>
+    <br />
+    <a href="https://www.youtube.com/@jonmircha" target="_blank" rel="nofollow">
+      <img src="/img/youtube.svg" alt="logo youtube (vector)" />
+    </a>
+    <br />
+    <a href="mailto:humanaortiz@gmail.com"
+      ><img
+        src="/img/email-mail-web-svgrepo-com.svg"
+        alt="mi correo"
+        width="40px"
+        height="40px"
+    /></a>
+    <br />
+    <a href="tel:59164309416"
+      ><img
+        src="/img/phone-calling-svgrepo-com.svg"
+        alt="phone"
+        width="40px"
+        height="40px"
+    /></a>
+    <br />
+    <a
+      href="https://api.whatsapp.com/send?phone=59164309416&text=Hola"
+      target="_blank"
+      rel="nofollow"
+      ><img
+        src="/img/whatsapp-svgrepo-com.svg"
+        alt="whatsapp"
+        width="40px"
+        height="40px"
+    /></a>
+    <br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
+    <h2 id="elementos-interactivos">Elementos interactivos</h2>
+    <button onclick="alert('soy una alerta')">Soy un boton</button>
+    <br />
+    <details open>
+      <summary>acordeon abierto por atributo "open"</summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sunt hic
+        laborum iste eius neque ducimus explicabo ipsum debitis a, corrupti
+        atque illo consequatur magni aut natus aperiam dolor distinctio?
+      </p>
+    </details>
+    <details>
+      <summary>acordeon cerrado por default</summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sunt hic
+        laborum iste eius neque ducimus explicabo ipsum debitis a, corrupti
+        atque illo consequatur magni aut natus aperiam dolor distinctio?
+      </p>
+    </details>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
+    <h2 id="audio-video">Audio y video</h2>
+    <audio
+      src="/media/POORSTACY - Don't look at me.mp3"
+      controls
+      preload="auto"
+    ></audio>
+    <br />
+    <video
+      src="/media/IntensaMente 2 .mp4"
+      controls
+      preload="auto"
+      poster="/img/imagen1.jpg"
+    ></video>
+    <br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
+    <h2 id="iframe">Iframe</h2>
+    <iframe src="/secciones de mi pag/hola.html" frameborder="1"></iframe>
+    <br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/F55LNTW3GE0?si=FMzZlTiBmQyjVuC-"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
+    <h2 id="elementos-formulario">Elementos de formulario</h2>
+    <p>Los input, que son etiquetas de linea:</p>
+    <span>texto</span>
+    <input type="text" />
+    <br />
+    <span>button</span>
+    <input type="button" value="boton" />
+    <br />
+    <span>submit</span>
+    <input type="submit" />
+    <br />
+    <span>file</span>
+    <input type="file" />
+    <br />
+    <span>file con mas de un archivo</span>
+    <input type="file" multiple />
+    <p>Tex area o para dejar comentarios:</p>
+    <textarea name="" id="" cols="50" rows="5"></textarea>
+    <p>select o para elegir similar a acordeon(details)</p>
+    <select name="" id="">
+      <option value="">Html</option>
+      <option value="">Css</option>
+      <option value="">Js</option>
+      <option value="">Python</option>
+    </select>
+    <br />
+    <h3>Ejemplo de formularios</h3>
+    <h4>Formulario de login</h4>
+    <form action="https://translate.google.com/" target="_blank">
+      <label for="usuario">Usuario:</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Introduce tu Usuario"
+        id="usuario"
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Introduce tu Password"
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+      <br />
+      <input type="submit" value="Send" />
+      <br />
+      <input type="reset" value="Delete" />
+    </form>
+    <h3>Selects, Radio-buttons, checkboxs</h3>
+    <form>
+      <p>Elige tu idioma</p>
+      <select name="idioma" required>
+        <option value="">Selecciona el idioma</option>
+        <option value="es">Español</option>
+        <option value="en">Ingles</option>
+        <option value="fr">Frances</option>
+        <option value="pt">Portugues</option>
+      </select>
+      <p>Lenguaje de programacion</p>
+      <label>
+        <input type="radio" name="lenguaje" value="py" required checked />
+        Python
+      </label>
+      <label>
+        <input type="radio" name="lenguaje" value="php" />
+        Php
+      </label>
+      <label>
+        <input type="radio" name="lenguaje" value="js" />
+        Java Script
+      </label>
+      <p>Seleccione sus generos favoritos</p>
+      <label>
+        <input type="checkbox" name="generos" value="Reguetton" />
+        Reguetton
+      </label>
+      <label>
+        <input type="checkbox" name="generos" value="Bachata" />
+        Bachata
+      </label>
+      <label>
+        <input type="checkbox" name="generos" value="Rock" />
+        Rock
+      </label>
+      <label>
+        <input type="checkbox" name="generos" value="Urbano" />
+        Urbano
+      </label>
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <!------------------>
+    <h3>Enviando formulario a mi gmail</h3>
+    <h4>Formulario para postulacion a beca IDH</h4>
+    <p>Datos personales</p>
+    <table>
+      <form action="https://formsubmit.co/humanaortiz@gmail.com" method="post">
+        <tr>
+          <td><label for="name">Nombre</label></td>
+          <td><label for="ap-p">Apellido Paterno</label></td>
+          <td><label for="ap-m">Apellido Materno</label></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ingrese su nombre.."
+              required
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              name="apellido-paterno"
+              id="ap-p"
+              placeholder="Ingrese su ap paterno.."
+              required
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              name="apellido-paterno"
+              id="ap-m"
+              placeholder="Ingrese su ap materno.."
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="fecha-n">Fecha de Nacimiento</label>
+          </td>
+          <td>
+            <label for="edad">Edad</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="date" name="fecha-nacimiento" id="fecha-n" required />
+          </td>
+          <td>
+            <input
+              type="number"
+              name="edad"
+              id="edad"
+              placeholder="Introduzca su edad"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Estado Civil</td>
+          <td>Sexo</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>
+              <input type="radio" name="estado-civil" required value="casado" />
+              Casado
+            </label>
+            <label>
+              <input type="radio" name="estado-civil" value="soltero" />
+              Soltero
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="sexo" value="m" required />
+              M
+            </label>
+            <label>
+              <input type="radio" name="sexo" value="f" />
+              F
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3"><br />Datos de Contacto <br /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>
+              Telefono:
+              <input
+                type="tel"
+                name="telefono"
+                placeholder="+591 12345678"
+                required
+              />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>
+              Email:
+              <input
+                type="email"
+                name="email"
+                autocomplete="off"
+                placeholder="pepito@gmail.com"
+                required
+              />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br />
+            <label for="beca">Eleccion de beca</label>
+          </td>
+          <td colspan="2">
+            <br />
+            <label for="more-info">Cuentanos mas sobre ti:</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select name="beca" id="beca" required>
+              <option value="">Seleccione una opcion</option>
+              <option value="b-c">Beca Comedor</option>
+              <option value="b-t">Beca trabajo</option>
+              <option value="b-r">Beca residencia</option>
+              <option value="b-i">Beca Investigacion Tesis</option>
+            </select>
+          </td>
+          <td colspan="2">
+            <textarea
+              name="more-info"
+              id="more-info"
+              cols="50"
+              rows="3"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="reset" />
+          </td>
+        </tr>
+      </form>
+    </table>
+    <!---->
+    <br />
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
+    <h2 id="data-attribute">Data attributes</h2>
+    <!-- Los data-atrtribute son atributos que nosotros creamos y los cuales pueden
+    formar parte de etiquetas como si fueran atributos predeterminados pero que cumple 
+    una funcion que nosotros queremos que cumplan-->
+    <ul>
+      <li data-id="2" data-name="v">Primavera</li>
+      <li data-id="2" data-name="v">Verano</li>
+      <li data-id="3" data-name="o">Otoño</li>
+      <li data-id="4" data-name="i">Invierno</li>
+    </ul>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
+    <h2 id="metaetiquetas-seo">Metaetiquetas para SEO y moviles</h2>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
+    <hr />
 
-    <h2>Scripts en html</h2>
+    <br /><br /><br /><br /><br /><br />
+    <hr />
+    <h2 id="scripts">Scripts en html</h2>
     <p>
       Los scripts siempre deben ir al final del body, al igual que la etiqueta
       style debe ir en el head
@@ -276,5 +857,13 @@
     <script>
       console.log("Escribiendo dentro de mi documento html usando un script");
     </script>
+    <a href="/index.html#temario">
+      <img
+        src="/img/up-arrow-svgrepo-com.svg"
+        alt="up arrow"
+        width="20px"
+        height="20px"
+      />
+    </a>
   </body>
 </html>
